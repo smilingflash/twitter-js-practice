@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router(); // mini express application capable of performing middleware and routing functions
-const tweetBank = require('..tweetBank.js');
+const tweetBank = require('../tweetBank.js');
 
 router.get('/', function (req, res){
   let tweets = tweetBank.list();
